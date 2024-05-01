@@ -43,12 +43,17 @@ g++ -std=c++20 main.cpp -o lru_arc_benchmark
 - Modify parameters such as cache size, workload pattern, and access frequencies in the source code before building for
   custom benchmarks.
 
+## Structure
+* [log_generator.py](log_generator.py) - generating the test file with logs
+* [view.py](view.py) - reviewing the duplicates distribution
+* [main.cpp](main.cpp) - test file (LRU and ARC implementation)
+
 ## Results
 
 | Algorithm | Total Examples | Cache Size | Hit    | Miss   | Hit Rate |
 |-----------|----------------|------------|--------|--------|----------|
-| LRU       | 100,000        | 1000       | 9,922  | 90,078 | 0.09922  |
-| ARC       | 100,000        | 1000       | 13,633 | 86,367 | 0.13633  |
+| LRU       | 100,000        | 100        | 9,922  | 90,078 | 0.09922  |
+| ARC       | 100,000        | 100        | 13,633 | 86,367 | 0.13633  |
 
 ## Acknowledgments
 
