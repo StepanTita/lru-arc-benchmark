@@ -45,10 +45,10 @@ g++ -std=c++20 main.cpp -o lru_arc_benchmark
 
 ## Results
 
-| Algorithm | Total Examples | Hit    | Miss   | Hit Rate |
-|-----------|----------------|--------|--------|----------|
-| LRU       | 100,000        | 9,922  | 90,078 | 0.09922  |
-| ARC       | 100,000        | 13,633 | 86,367 | 0.13633  |
+| Algorithm | Total Examples | Cache Size | Hit    | Miss   | Hit Rate |
+|-----------|----------------|------------|--------|--------|----------|
+| LRU       | 100,000        | 1000       | 9,922  | 90,078 | 0.09922  |
+| ARC       | 100,000        | 1000       | 13,633 | 86,367 | 0.13633  |
 
 ## Acknowledgments
 
